@@ -48,5 +48,4 @@ public class persona {
         this.telefono = telefono;
     }
 
-    
 }
