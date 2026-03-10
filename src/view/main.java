@@ -1,5 +1,5 @@
 
-package transjjjv1;
+package view;
 
 /**
  *
