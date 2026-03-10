@@ -6,6 +6,16 @@ public class vehiculo {
     private String modelo;
     private String tipo;
 
+        public vehiculo(String placa, String marca, String modelo, String tipo) {
+        this.placa = placa;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.tipo = tipo;
+    }
+        
+    public vehiculo() {
+    }
+    
     public String getPlaca() {
         return placa;
     }
