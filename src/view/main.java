@@ -1,10 +1,6 @@
 
 package view;
 
-/**
- *
- * @author santi
- */
 public class main {
 
 
