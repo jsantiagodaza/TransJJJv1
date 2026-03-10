@@ -26,6 +26,62 @@ public class ticket {
 
     public ticket() {
     }
+
+    public String getId() {
+        return Id;
+    }
+
+    public void setId(String Id) {
+        this.Id = Id;
+    }
+
+    public String getEmpresa() {
+        return Empresa;
+    }
+
+    public void setEmpresa(String Empresa) {
+        this.Empresa = Empresa;
+    }
+
+    public String getCodigoTicket() {
+        return CodigoTicket;
+    }
+
+    public void setCodigoTicket(String CodigoTicket) {
+        this.CodigoTicket = CodigoTicket;
+    }
+
+    public LocalDate getFechaviaje() {
+        return fechaviaje;
+    }
+
+    public void setFechaviaje(LocalDate fechaviaje) {
+        this.fechaviaje = fechaviaje;
+    }
+
+    public LocalTime getHoraviaje() {
+        return horaviaje;
+    }
+
+    public void setHoraviaje(LocalTime horaviaje) {
+        this.horaviaje = horaviaje;
+    }
+
+    public String getIdvehiculo() {
+        return Idvehiculo;
+    }
+
+    public void setIdvehiculo(String Idvehiculo) {
+        this.Idvehiculo = Idvehiculo;
+    }
+
+    public float getPrecioticket() {
+        return precioticket;
+    }
+
+    public void setPrecioticket(float precioticket) {
+        this.precioticket = precioticket;
+    }
     
     
     
