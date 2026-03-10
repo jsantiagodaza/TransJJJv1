@@ -13,6 +13,20 @@ public class ticket {
     private LocalTime horaviaje;
     private String Idvehiculo;
     private float precioticket;
+
+    public ticket(String Id, String Empresa, String CodigoTicket, LocalDate fechaviaje, LocalTime horaviaje, String Idvehiculo, float precioticket) {
+        this.Id = Id;
+        this.Empresa = Empresa;
+        this.CodigoTicket = CodigoTicket;
+        this.fechaviaje = fechaviaje;
+        this.horaviaje = horaviaje;
+        this.Idvehiculo = Idvehiculo;
+        this.precioticket = precioticket;
+    }
+
+    public ticket() {
+    }
+    
     
     
 }
