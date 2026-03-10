@@ -10,7 +10,7 @@ Scanner sc new Scanner(System.in); //<--usaremos scanner para leer, no usaremos 
 
 
     }
-    static int menuPrincipal(){
+    static void menuPrincipal(){
         int opcion = 0;
     System.out.println("\n-----------------------------------------------");
     System.out.println("|           SISTEMAS DE BUSES              |");
@@ -24,6 +24,20 @@ Scanner sc new Scanner(System.in); //<--usaremos scanner para leer, no usaremos 
     System.out.println("seleccione(1-4):");
     return (opcion);
 }
+  static void menuPersonas(){
+  int opcionpasajero = 0;
+  System.out.println("\n--------------------------------------------------");
+    System.out.println("|     SISTEMAS DE PASAJEROS          |");
+    System.out.println("|------------------------------------------------|");
+    System.out.println("| 1.  Registrar de pasajeros                   |");
+    System.out.println("| 2. Listar Pasajeros                               |");
+    System.out.println("| 3. Buscar por cédula                            |");
+    System.out.println("| 4. salir                                                    |");
+    System.out.println("|------------------------------------------------|");
+    System.out.println(" ");
+    System.out.println("seleccione(1-4):");
+    return (opcionpasajero);
+  }  
 }
     
 
