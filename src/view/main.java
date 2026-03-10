@@ -38,6 +38,20 @@ Scanner sc new Scanner(System.in); //<--usaremos scanner para leer, no usaremos 
     System.out.println("seleccione(1-4):");
     return (opcionpasajero);
   }  
+  static void menuVehiculos(){
+  int opcionvehiculos= 0;
+  System.out.println("\n--------------------------------------------------");
+    System.out.println("|                     VEHICULOS                     |");
+    System.out.println("|------------------------------------------------|");
+    System.out.println("| 1.  Registrar de vehículos                    |");
+    System.out.println("| 2. Listar Vehículos                                |");
+    System.out.println("| 3. Buscar por placa                              |");
+    System.out.println("| 4. salir                                                    |");
+    System.out.println("|------------------------------------------------|");
+    System.out.println(" ");
+    System.out.println("seleccione(1-4):");
+    return (opcionvehiculos);
+  }  
 }
     
 
