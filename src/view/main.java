@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class main {
 
     static ArrayList<persona> personas = new ArrayList<>();//array para personas
-    static ArrayList<ticket> tickets = new ArrayList<>();//array para personas
+    static ArrayList<ticket> tickets = new ArrayList<>();//array para tickets
 
     public static void main(String[] args) {
 
