@@ -8,15 +8,14 @@ public class persona {
      private String id;
     private String nombre;
     private String apellido;
-    private String cedula;
     private String telefono;
     private int edad;
     
 Scanner Sc = new Scanner(System.in);
-    public persona(String  id, String nombre, String apellido, String cedula, String telefono) {
+    public persona(String  id, String nombre, String apellido,  String telefono) {
         this.id = id;
         this.nombre = nombre;
-        this.cedula = cedula;
+ 
         this.telefono = telefono;
     }
 
@@ -39,13 +38,7 @@ Scanner Sc = new Scanner(System.in);
         this.nombre = nombre;
     }
 
-    public String getCedula() {
-        return cedula;
-    }
 
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
-    }
 
     public String getTelefono() {
         return telefono;
@@ -61,7 +54,6 @@ Scanner Sc = new Scanner(System.in);
                "ID:" + id +
                ", Nombre:" + nombre + "\n " +
                ", Apellido: " + apellido + "\n " + 
-               ",Cédula:"+ cedula + "\n"+
                ", Edad: " + edad+"\n-------------";
 }
 

@@ -97,13 +97,11 @@ public class main {
         System.out.println("Digite la edad:");
         int edad = sc.nextInt();
         
-        System.out.println("Digite la cédula:");
-        String cedula = sc.nextLine();
         
         System.out.println("Digite el telefono:");
         String telefono = sc.nextLine();
 
-        persona persona = new persona(id,  nombre, apellido,  cedula,  telefono);
+        persona persona = new persona(id,  nombre, apellido,  telefono);
         personas.add(persona);
 
         System.out.println("Ha sido registrado con éxito.");
@@ -119,4 +117,18 @@ public class main {
             System.out.println(p);
         }
     }
+          public static void buscarPersonas() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite el ID del pasajero a buscar:");
+        int cedula = sc.nextInt();
+
+        for (persona p : personas) {
+            if (p.getId() == id) {
+                System.out.println("pasajero encontrado:");
+                System.out.println(p);
+                return;
+            }
+        }
+          System.out.println("No se encontró un pasajero con esa identificación.");
+}
 }
