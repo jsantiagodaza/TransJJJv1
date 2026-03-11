@@ -104,7 +104,7 @@ public class main {
         persona persona = new persona(id,  nombre, apellido,  cedula,  telefono);
         personas.add(persona);
 
-        System.out.println("Estudiante Registrado con éxito.");
+        System.out.println("Ha sido registrado con éxito.");
 
     }
 }
