@@ -109,4 +109,14 @@ public class main {
         System.out.println("Ha sido registrado con éxito.");
 
     }
+        public static void listarPersonas() { //<--esto lo que hace es recorrer la lista de los pasajeros para mostrar sus datos
+        if (personas.isEmpty()) { //<--en caso de que esté vació
+            System.out.println("No hay pasajeros registrados aún.");
+            return;
+        }
+
+        for (persona p : personas) {
+            System.out.println(p);
+        }
+    }
 }
