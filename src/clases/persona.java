@@ -1,11 +1,17 @@
 
 package clases;
+
+import java.util.Scanner;
+
 public class persona {
      private String id;
     private String nombre;
+    private String apellido;
     private String cedula;
     private String telefono;
-
+    private int edad;
+    
+Scanner Sc = new Scanner(System.in);
     public persona(String id, String nombre, String cedula, String telefono) {
         this.id = id;
         this.nombre = nombre;
@@ -47,5 +53,14 @@ public class persona {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-
+  @Override
+   public String toString(){
+     
+       return "Pasajero{"+
+               "ID:" + id +
+               ", Nombre:" + nombre + "\n " +
+               ", Apellido: " + apellido + "\n " + 
+               ",Cédula:"+ cedula + "\n"+
+               ", Edad: " + edad+"\n-------------";
+}
 }
