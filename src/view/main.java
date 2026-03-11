@@ -1,12 +1,14 @@
 package view;
 
 import clases.persona;
+import clases.ticket;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class main {
 
     static ArrayList<persona> personas = new ArrayList<>();//array para personas
+    static ArrayList<ticket> tickets = new ArrayList<>();//array para personas
 
     public static void main(String[] args) {
 
