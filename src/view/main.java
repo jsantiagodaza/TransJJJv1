@@ -1,11 +1,12 @@
-
 package view;
 
+import clases.persona;
+import java.util.ArrayList;
 import java.util.Scanner;
-
 public class main {
+    static ArrayList<persona> personas = new ArrayList<>();//array para personas
     public static void main(String[] args) {
-    
+   
 Scanner Sc = new Scanner(System.in); //<--usaremos scanner para leer, no usaremos bufered reader
 
 
