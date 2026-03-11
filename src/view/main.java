@@ -6,11 +6,12 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
     
-Scanner sc new Scanner(System.in); //<--usaremos scanner para leer, no usaremos bufered reader
+Scanner Sc = new Scanner(System.in); //<--usaremos scanner para leer, no usaremos bufered reader
 
 
     }
-    static void menuPrincipal(){
+    static int menuPrincipal(){
+        Scanner Sc = new Scanner(System.in);
         int opcion = 0;
     System.out.println("\n-----------------------------------------------");
     System.out.println("|           SISTEMAS DE BUSES              |");
@@ -22,9 +23,11 @@ Scanner sc new Scanner(System.in); //<--usaremos scanner para leer, no usaremos 
     System.out.println("|------------------------------------------------|");
     System.out.println(" ");
     System.out.println("seleccione(1-4):");
+    opcion = Sc.nextInt();
     return (opcion);
 }
-  static void menuPersonas(){
+  static int menuPersonas(){
+      Scanner Sc = new Scanner(System.in);
   int opcionpasajero = 0;
   System.out.println("\n--------------------------------------------------");
     System.out.println("|     SISTEMAS DE PASAJEROS          |");
@@ -36,9 +39,11 @@ Scanner sc new Scanner(System.in); //<--usaremos scanner para leer, no usaremos 
     System.out.println("|------------------------------------------------|");
     System.out.println(" ");
     System.out.println("seleccione(1-4):");
+    opcionpasajero = Sc.nextInt();
     return (opcionpasajero);
   }  
-  static void menuVehiculos(){
+  static int menuVehiculos(){
+      Scanner Sc = new Scanner(System.in);
   int opcionvehiculos= 0;
   System.out.println("\n--------------------------------------------------");
     System.out.println("|                     VEHICULOS                     |");
@@ -50,9 +55,11 @@ Scanner sc new Scanner(System.in); //<--usaremos scanner para leer, no usaremos 
     System.out.println("|------------------------------------------------|");
     System.out.println(" ");
     System.out.println("seleccione(1-4):");
+    opcionvehiculos = Sc.nextInt();
     return (opcionvehiculos);
   }  
-  static void menuTickets(){
+  static int menuTickets(){
+      Scanner Sc = new Scanner(System.in);
   int opcionTicket= 0;
   System.out.println("\n--------------------------------------------------");
     System.out.println("|                         TICKETS                       |");
@@ -64,6 +71,7 @@ Scanner sc new Scanner(System.in); //<--usaremos scanner para leer, no usaremos 
     System.out.println("|------------------------------------------------|");
     System.out.println(" ");
     System.out.println("seleccione(1-4):");
+    opcionTicket = Sc.nextInt();
     return (opcionTicket);
   }  
 }
