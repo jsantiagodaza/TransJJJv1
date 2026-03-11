@@ -120,7 +120,7 @@ public class main {
           public static void buscarPersonas() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite el ID del pasajero a buscar:");
-        int cedula = sc.nextInt();
+        String id = sc.nextLine();
 
         for (persona p : personas) {
             if (p.getId() == id) {
