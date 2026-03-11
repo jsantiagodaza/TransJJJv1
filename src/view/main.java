@@ -2,6 +2,7 @@ package view;
 
 import clases.persona;
 import clases.ticket;
+import clases.vehiculo;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -9,7 +10,7 @@ public class main {
 
     static ArrayList<persona> personas = new ArrayList<>();//array para personas
     static ArrayList<ticket> tickets = new ArrayList<>();//array para tickets
-
+static ArrayList<vehiculo> vehiculos = new ArrayList<>();//array para vehiculos   
     public static void main(String[] args) {
 
         Scanner Sc = new Scanner(System.in); //<--usaremos scanner para leer, no usaremos bufered reader
@@ -131,5 +132,6 @@ public class main {
         }
           System.out.println("No se encontró un pasajero con esa identificación.");
 }
+  
           
 }
