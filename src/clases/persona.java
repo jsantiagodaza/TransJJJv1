@@ -1,6 +1,7 @@
 
 package clases;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class persona {
@@ -12,7 +13,7 @@ public class persona {
     private int edad;
     
 Scanner Sc = new Scanner(System.in);
-    public persona(String id, String nombre, String cedula, String telefono) {
+    public persona(String  id, String nombre, String apellido, String cedula, String telefono) {
         this.id = id;
         this.nombre = nombre;
         this.cedula = cedula;
@@ -63,4 +64,6 @@ Scanner Sc = new Scanner(System.in);
                ",Cédula:"+ cedula + "\n"+
                ", Edad: " + edad+"\n-------------";
 }
+
+ 
 }

@@ -81,4 +81,30 @@ public class main {
         opcionTicket = Sc.nextInt();
         return (opcionTicket);
     }
+    public static void registrarPasajero() { //<--Para registrar a los pasajeros
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite la ID:");
+        String id = sc.nextLine();
+
+        System.out.println("Digite el Nombre:");
+        String nombre = sc.nextLine();
+
+        System.out.println("Digite el Apellido:");
+        String apellido = sc.nextLine();
+
+        System.out.println("Digite la edad:");
+        int edad = sc.nextInt();
+        
+        System.out.println("Digite la cédula:");
+        String cedula = sc.nextLine();
+        
+        System.out.println("Digite el telefono:");
+        String telefono = sc.nextLine();
+
+        persona persona = new persona(id,  nombre, apellido,  cedula,  telefono);
+        personas.add(persona);
+
+        System.out.println("Estudiante Registrado con éxito.");
+
+    }
 }
