@@ -48,6 +48,12 @@ public class PersonaDAO {
     }
     
     
+     // DELETE - Eliminar por ID
+    public boolean eliminar(String id) {
+        return personas.removeIf(p -> p.getId().equals(id));
+    }
+    
+    
     
     
     
