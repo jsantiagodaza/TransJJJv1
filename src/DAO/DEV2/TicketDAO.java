@@ -55,6 +55,10 @@ public class TicketDAO {
         return false;
     }
     
+     // DELETE
+    public boolean eliminar(String id) {
+        return tickets.removeIf(t -> t.getId().equals(id));
+    }
     
     
     
