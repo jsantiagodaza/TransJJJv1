@@ -75,5 +75,7 @@ public abstract class Vehiculo {
     public void setDisponible(boolean disponible) {
         this.disponible = disponible;
     }
-   
+   public String toArchiveString(){
+       return placa + ";" + ruta + ";" + pasajerosActuales + ";" + disponible;
+   }
 }
