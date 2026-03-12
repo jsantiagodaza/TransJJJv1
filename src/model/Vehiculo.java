@@ -24,7 +24,7 @@ public abstract class Vehiculo {
         this.disponible = true;
     }
 
-   public abstract double getTarifaBasa();
+   public abstract double getTarifaBase();
    
    public boolean tieneCupos(){
        return pasajerosActuales < capacidadMaxima;
@@ -78,4 +78,16 @@ public abstract class Vehiculo {
    public String toArchiveString(){
        return placa + ";" + ruta + ";" + pasajerosActuales + ";" + disponible;
    }
+
+    public void imprimirDetalle() {
+        System.out.println("┌─────────────────────────────────────┐");
+        System.out.println("  Tipo     : " + this.getClass().getSimpleName());
+        System.out.println("  Placa    : " + placa);
+        System.out.println("  Ruta     : " + ruta);
+        System.out.println("  Capacidad: " + capacidadMaxima);
+        System.out.println("  Cupos    : " + getCuposDisponibles());
+        System.out.println("  Tarifa   : $" + (int) getTarifaBase());
+        System.out.println("  Estado   : " + (disponible ? "Disponible" : "No disponible"));
+        System.out.println("└─────────────────────────────────────┘");
+    }
 }
