@@ -98,7 +98,14 @@ public class dao1 {
             System.out.println("Error al escribir " + archivo + ": " + e.getMessage());
         }
     }
+     
+      private String getArchivo(Vehiculo v) {
+        if (v instanceof Bus)     return ARCHIVO_BUS;
+        if (v instanceof Buseta)  return ARCHIVO_BUSETA;
+        return ARCHIVO_MICROBUS;
     }
+}
+    
     
     
 
