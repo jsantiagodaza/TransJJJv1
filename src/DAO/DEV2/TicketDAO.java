@@ -39,6 +39,11 @@ public class TicketDAO {
     }
     
     
+        // READ - Obtener todos
+    public ArrayList<ticket> obtenerTodos() {
+        return tickets;
+    }
+    
     
     
     
