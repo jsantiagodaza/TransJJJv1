@@ -44,6 +44,17 @@ public class TicketDAO {
         return tickets;
     }
     
+        // UPDATE
+    public boolean actualizar(String id, ticket ticketActualizado) {
+        for (int i = 0; i < tickets.size(); i++) {
+            if (tickets.get(i).getId().equals(id)) {
+                tickets.set(i, ticketActualizado);
+                return true;
+            }
+        }
+        return false;
+    }
+    
     
     
     
