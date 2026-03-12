@@ -21,6 +21,19 @@ public class PersonaDAO {
     }
     
     
+        // READ - Buscar por ID
+    public persona buscarPorId(String id) {
+        for (persona p : personas) {
+            if (p.getId().equals(id)) {
+                return p;
+            }
+        }
+        return null; // No encontrado
+    }
+    
+    
+    
+    
     
     
 }
