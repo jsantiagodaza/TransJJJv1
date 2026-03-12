@@ -36,6 +36,18 @@ public class PersonaDAO {
         return personas;
     }
     
+     // UPDATE - Actualizar una persona
+    public boolean actualizar(String id, persona personaActualizada) {
+        for (int i = 0; i < personas.size(); i++) {
+            if (personas.get(i).getId().equals(id)) {
+                personas.set(i, personaActualizada);
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    
     
     
     
