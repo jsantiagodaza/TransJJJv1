@@ -9,6 +9,10 @@ import java.util.ArrayList;
 
 public class TicketDAO {
     
+    private ArrayList<ticket> tickets = new ArrayList<>();
+    
+    
+    
     
     
     
