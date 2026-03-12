@@ -9,10 +9,11 @@ import java.util.ArrayList;
 
 
 
-
-
-
-
 public class PersonaDAO {
+   
+    private ArrayList<persona> personas = new ArrayList<>();
+    
+    
+    
     
 }
