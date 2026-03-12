@@ -11,7 +11,14 @@ import java.util.ArrayList;
 
 public class PersonaDAO {
    
-    private ArrayList<persona> personas = new ArrayList<>();
+    private ArrayList<persona> personas = new ArrayList<>(); 
+    
+     
+    // CREATE - Guardar una persona
+    public void guardar(persona p) {
+        personas.add(p);
+        System.out.println("Persona guardada: " + p.getNombre());
+    }
     
     
     
