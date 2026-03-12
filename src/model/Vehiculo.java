@@ -39,4 +39,41 @@ public abstract class Vehiculo {
            pasajerosActuales++;
        }
    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public String getRuta() {
+        return ruta;
+    }
+
+    public void setRuta(String ruta) {
+        this.ruta = ruta;
+    }
+
+    public int getCapacidadMaxima() {
+        return capacidadMaxima;
+    }
+
+    public int getPasajerosActuales() {
+        return pasajerosActuales;
+    }
+
+    public void setPasajerosActuales(int pasajerosActuales) {
+        this.pasajerosActuales = pasajerosActuales;
+    }
+
+    public boolean isDisponible() {
+        return disponible;
+    }
+
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
+    }
+   
 }
