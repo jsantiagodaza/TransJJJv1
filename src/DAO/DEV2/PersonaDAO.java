@@ -54,6 +54,10 @@ public class PersonaDAO {
     }
     
     
+        // Verificar si existe
+    public boolean existe(String id) {
+        return buscarPorId(id) != null;
+    }
     
     
     
