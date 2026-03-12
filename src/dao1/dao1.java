@@ -71,7 +71,33 @@ public class dao1 {
         return lista;
     }
     
+    public void reescribirArchivo(List<Vehiculo> vehiculos) {
+        // Separar por tipo
+        List<Vehiculo> buses    = new ArrayList<>();
+        List<Vehiculo> busetas  = new ArrayList<>();
+        List<Vehiculo> micros   = new ArrayList<>();
+
+        for (Vehiculo v : vehiculos) {
+            if (v instanceof Bus)       buses.add(v);
+            else if (v instanceof Buseta) busetas.add(v);
+            else                          micros.add(v);
+        }
+
+        escribirLista(buses,   ARCHIVO_BUS);
+        escribirLista(busetas, ARCHIVO_BUSETA);
+        escribirLista(micros,  ARCHIVO_MICROBUS);
+    }
     
+     private void escribirLista(List<Vehiculo> lista, String archivo) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(archivo, false))) {
+            for (Vehiculo v : lista) {
+                bw.write(v.toArchivoString());
+                bw.newLine();
+            }
+        } catch (IOException e) {
+            System.out.println("Error al escribir " + archivo + ": " + e.getMessage());
+        }
+    }
     }
     
     
