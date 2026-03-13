@@ -47,6 +47,12 @@ public class TicketServices {
         
         return "Ticket creado con éxito. Código: " + codigoTicket;
     }
+        
+         // Buscar ticket
+        public ticket buscarTicket(String id) {
+        return ticketDAO.buscarPorId(id);
+    }
+   
     
     
      
