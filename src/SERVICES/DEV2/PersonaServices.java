@@ -33,8 +33,14 @@ public class PersonaServices {
         personaDAO.guardar(nueva);
         
         return "Persona registrada con éxito";
+        
+        
     }
     
+         // Buscar persona
+         public persona buscarPersona(String id) {
+         return personaDAO.buscarPorId(id);
+    }
     
 
     
