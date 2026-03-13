@@ -47,8 +47,10 @@ public class PersonaServices {
         return personaDAO.obtenerTodas();
     }
 
-    
-    
+        // Eliminar
+        public boolean eliminarPersona(String id) {
+        return personaDAO.eliminar(id);
+    }
     
     
     
