@@ -55,6 +55,11 @@ public class TicketServices {
             public ticket buscarPorCodigo(String codigo) {
         return ticketDAO.buscarPorCodigo(codigo);
     }
+            
+         // Listar todos
+        public ArrayList<ticket> listarTickets() {
+        return ticketDAO.obtenerTodos();
+    }
    
     
     
