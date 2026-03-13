@@ -14,4 +14,6 @@ import java.util.UUID;
 
 public class TicketServices {
     
+     private TicketDAO ticketDAO = new TicketDAO();
+    
 }
