@@ -11,6 +11,8 @@ import java.util.ArrayList;
 
 public class PersonaServices {
     
+     private PersonaDAO personaDAO = new PersonaDAO();
+    
     
 
     
